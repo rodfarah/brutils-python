@@ -117,6 +117,12 @@ from brutils.voter_id import (
     is_valid as is_valid_voter_id,
 )
 
+# UF Imports    
+from brutils.ibge.uf import (
+    text_formatter,
+    convert_text_to_uf,
+)
+
 # Defining __all__ to expose the public methods
 __all__ = [
     # CEP
@@ -165,4 +171,7 @@ __all__ = [
     "format_voter_id",
     "generate_voter_id",
     "is_valid_voter_id",
+    # UF
+    'text_formatter',
+    'convert_text_to_uf',
 ]
